@@ -1,9 +1,9 @@
-title:            Slate+Simple Jekyll Theme
+title:            e i h n i m
 description:      Your site description...
-copyright:        Your Name
+copyright:        Nguyen Minh Hieu
 url: # add your custom site url (format: https://example.com)
 
-
+plugins: [jekyll-paginate]
 future:      false  # publish future dated posts --  true, false (default)
 highlighter: rouge
 markdown:    kramdown

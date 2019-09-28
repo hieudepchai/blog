@@ -1,5 +1,4 @@
-# Slate+Simple Jekyll Theme
-
+# Description
 This template is based on [Slate-and-Simple-Jekyll-Theme](https://github.com/benradford/Slate-and-Simple-Jekyll-Theme) by [Benjamin Radford](https://github.com/benradford). 
 
 

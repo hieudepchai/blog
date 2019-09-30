@@ -3,10 +3,10 @@
   <channel>
     <title>e i h n i m</title>
     <description>Your site description...</description>
-    <link>http://localhost:2506/</link>
+    <link>http://localhost:1205/</link>
     <atom:link href="nathanrooy.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 30 Sep 2019 16:15:33 +0700</pubDate>
-    <lastBuildDate>Mon, 30 Sep 2019 16:15:33 +0700</lastBuildDate>
+    <pubDate>Tue, 01 Oct 2019 00:07:09 +0700</pubDate>
+    <lastBuildDate>Tue, 01 Oct 2019 00:07:09 +0700</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
       
     
@@ -39,6 +39,15 @@
         <description>&lt;h2 id=&quot;tutorial&quot;&gt;Tutorial&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://medium.com/data-science-school/practical-apache-spark-in-10-minutes-part-7-graphx-and-neo4j-b6b01cffa4fd&quot; target=&quot;_blank&quot;&gt;Practical Apache Spark in 10 minutes. Part 7 — GraphX and Neo4j&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;practice&quot;&gt;Practice&lt;/h2&gt;
+&lt;p&gt;Because I had not install Hadoop and Spark, I installed them following &lt;a style=&quot;color:blue;&quot; href=&quot;https://medium.com/data-science-school/practical-apache-spark-in-10-minutes-part-1-ubuntu-installation-f69bbb17ee9d&quot;&gt;this&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Install Java&lt;br /&gt;
+&lt;img src=&quot;/images/2019-09-30/java_version.png&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Install Hadoop&lt;br /&gt;
+&lt;img src=&quot;/images/2019-09-30/hadoop_test.png&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Install Spark&lt;br /&gt;
+&lt;img src=&quot;/images/2019-09-30/spark_res.png&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         <pubDate>Mon, 30 Sep 2019 00:00:00 +0700</pubDate>
         

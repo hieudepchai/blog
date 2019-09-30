@@ -1,0 +1,13 @@
+I"<h2 id="tutorial">Tutorial</h2>
+<p><a href="https://medium.com/data-science-school/practical-apache-spark-in-10-minutes-part-7-graphx-and-neo4j-b6b01cffa4fd" target="_blank">Practical Apache Spark in 10 minutes. Part 7 — GraphX and Neo4j</a></p>
+<h2 id="practice">Practice</h2>
+<p>Because I have not install Hadoop and Spark, I install them following 
+&lt;a style=”color:blue;”href=”https://medium.com/data-science-school/practical-apache-spark-in-10-minutes-part-1-ubuntu-installation-f69bbb17ee9d”&gt;this&lt;/a&gt;</p>
+<ol>
+  <li>
+    <p>Install java<br /></p>
+  </li>
+  <li>Install Hadoop</li>
+  <li>Install Spark</li>
+</ol>
+:ET

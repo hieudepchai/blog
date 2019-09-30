@@ -1,26 +1,30 @@
 /*--- LINKS -----------------------------------------------------------------*/
 
-a {  
-	text-decoration: none;
-	color: $link-color; 
+a {
+    text-decoration: none;
+    color: $link-color;
 
-	&:visited { 
-		color: lighten($link-color, 20); 
-	}
+    &:visited {
+        // color: lighten($link-color, 20); 
+    }
 
-	&:hover { 
-		color: lighten($link-color, 20); 
-	}
+    &:hover {
+        color: red;
+    }
 
-	&:focus { 
-		outline: thin dotted; 
-		color: darken($link-color, 20);
-	}
+    &:focus {
+        outline: thin dotted;
+        color: darken($link-color, 20);
+    }
 
-	&:hover, 
-	&:active { 
-		outline: 0; 
-	}
+    &:hover,
+    &:active {
+        outline: 0;
+    }
+}
+
+.entry-title a:hover {
+    cursor: pointer;
 }
 
 /*--- BLOCKQUOTE ------------------------------------------------------------*/
@@ -37,46 +41,50 @@ blockquote {
 
 /*--- CODE FORMAT -----------------------------------------------------------*/
 
-tt, code, kbd, samp, pre {
-	font-family: $code-font;
+tt,
+code,
+kbd,
+samp,
+pre {
+    font-family: $code-font;
 }
 
-p > code,
-a > code,
-li > code,
-figcaption > code,
-td > code {
+p>code,
+a>code,
+li>code,
+figcaption>code,
+td>code {
     margin: 0 2px;
-	padding: 0 5px;
+    padding: 0 5px;
     font-size: 12px;
-	line-height: 1.5;
+    line-height: 1.5;
     border: 1px solid lighten(#000, 90);
-	background-color: lighten(#000, 95);
-	border-radius: 3px;
+    background-color: lighten(#000, 95);
+    border-radius: 3px;
 }
 
 pre {
     font-size: 12px;
-	line-height: 1.5;
-	overflow-x: auto;
+    line-height: 1.5;
+    overflow-x: auto;
 
-	&::-webkit-scrollbar {
-		height: 12px;
-		background-color: #34362e;
-		border-radius: 0 0 4px 4px;
-	}
+    &::-webkit-scrollbar {
+        height: 12px;
+        background-color: #34362e;
+        border-radius: 0 0 4px 4px;
+    }
 
-	&::-webkit-scrollbar-thumb:horizontal {
-		background-color: #6a6d5d;
-		border-radius: 4px;
-	}
+    &::-webkit-scrollbar-thumb:horizontal {
+        background-color: #6a6d5d;
+        border-radius: 4px;
+    }
 }
 
 /*--- ABOUT SECTION (SOCIAL MEDIA) ------------------------------------------*/
 
 .personal-social-media {
     word-spacing: 10px;
-    
+
     img:hover {
         opacity: 0.5;
     }
@@ -84,52 +92,52 @@ pre {
 
 /*--- DIVIDING LINE ---------------------------------------------------------*/
 
-hr { 
-    display: block; 
-    margin: 1em 0 1.5em; 
+hr {
+    display: block;
+    margin: 1em 0 1.5em;
     padding: 0;
-    height: 1px; 
-    border: 0; 
+    height: 1px;
+    border: 0;
     border-top: 1px solid #ccc;
-    border-bottom: 1px solid #fff; 
+    border-bottom: 1px solid #fff;
 }
 
 /*--- FIGURES & IMAGES ------------------------------------------------------*/
 
 figure {
-  margin: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
-  img {
-    margin-bottom: 0px;
-  }
+    img {
+        margin-bottom: 0px;
+    }
 }
 
 svg:not(:root) {
-  overflow: hidden; 
+    overflow: hidden;
 }
 
 /*--- PAGINATION ------------------------------------------------------------*/
 
 .pagination {
-    a{
-        color: lighten($base-color,30);
+    a {
+        color: lighten($base-color, 30);
     }
-    
+
     a:hover {
-        color: lighten($base-color,60);
+        color: lighten($base-color, 60);
     }
-    
+
     word-spacing: 10px;
 }
 
 /*--- EQUATIONS -------------------------------------------------------------*/
 
 .has-jax {
-    font: inherit; 
-    font-size: 100; 
-    background: inherit; 
+    font: inherit;
+    font-size: 100;
+    background: inherit;
     border: inherit;
     color: #006699;
 }
@@ -144,21 +152,21 @@ svg:not(:root) {
     text-align: center;
 
     li {
-	    padding-left: 10px;
-	    padding-right: 10px;
-	    display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: inline-block;
     }
 
-    a{
-    	text-transform: uppercase;
+    a {
+        text-transform: uppercase;
         //color: $base-color;
-        color: lighten($base-color,30);
+        color: lighten($base-color, 30);
         font-weight: 100;
     }
-    
+
     a:hover {
-    	text-transform: uppercase;
-        color: lighten($base-color,60);
+        text-transform: uppercase;
+        color: lighten($base-color, 60);
         font-weight: 100;
     }
 }
@@ -171,16 +179,30 @@ svg:not(:root) {
     a {
         color: #F2992E;
     }
-    
+
     &:hover {
-        color: lighten(#F2992E,20);
+        color: lighten(#F2992E, 20);
     }
 }
 
 /*--- GLOBAL TRANSITION -----------------------------------------------------*/
 
-b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a {
-	transition: all 0.2s ease;
+b,
+i,
+strong,
+em,
+blockquote,
+p,
+q,
+span,
+figure,
+img,
+h1,
+h2,
+header,
+input,
+a {
+    transition: all 0.2s ease;
 }
 
 /*--- MAIN CONTENT ----------------------------------------------------------*/
@@ -195,166 +217,180 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a 
 }
 
 .entry-subtitle {
-	font-weight: 100;
+    font-weight: 100;
 }
 
 .main-header-image {
     img {
         @media #{$medium} {
             margin-left: 0px;
-			margin-right: 0px;
-			max-width: $column-width;
-		}
+            margin-right: 0px;
+            max-width: $column-width;
+        }
 
-		@media #{$large} {
-			max-width: $column-width;
-		}
+        @media #{$large} {
+            max-width: $column-width;
+        }
     }
-    
+
     img:hover {
         opacity: 0.8;
     }
 
-    h1, a, div {
-    	text-transform: uppercase;
-		color: lighten($base-color, 60);
-		letter-spacing: 5px;
-	}
+    h1,
+    a,
+    div {
+        text-transform: uppercase;
+        color: lighten($base-color, 60);
+        letter-spacing: 5px;
+    }
 }
 
 .post-date {
     font-size: 12px;
-	text-transform: uppercase;
-    color: lighten($base-color,50);
+    text-transform: uppercase;
+    color: lighten($base-color, 50);
 
-	a {
-		color: lighten($base-color,50);
-	}
-    
-    a:hover{
-        color: lighten($base-color,20);
+    a {
+        color: lighten($base-color, 50);
+    }
+
+    a:hover {
+        color: lighten($base-color, 20);
     }
 }
 
 header .entry-meta {
-	display: none; // hide header meta on small screens
+    display: none; // hide header meta on small screens
 
-	@media #{$medium} {
-		display: block;
-	}
+    @media #{$medium} {
+        display: block;
+    }
 }
 
 /*--- POST INDEX ------------------------------------------------------------*/
 
 #post-index {
-	#main {
-		margin: 40px 2px 20px 2px;
+    #main {
+        margin: 40px 2px 20px 2px;
 
-		@media #{$medium} {
-			margin-left: 20px;
-			margin-right: 20px;
-		}
+        @media #{$medium} {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
 
-		@media #{$large} {
-			max-width: $column-width;
-			margin-top: 50px;
-			margin-left: auto;
-			margin-right: auto;
-		}
-	}
+        @media #{$large} {
+            max-width: $column-width;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 
-	article {
-		background-color: #fff;
-		box-shadow: 0 0 0 0, 0 6px 12px rgba($base-color,0.2);
-		border-radius: 3px;
-		margin-bottom: 20px;
-		padding: 25px 15px;
-		overflow: hidden;
+    article {
+        background-color: #fff;
+        box-shadow: 0 0 0 0, 0 6px 12px rgba($base-color, 0.2);
+        border-radius: 3px;
+        margin-bottom: 20px;
+        padding: 25px 15px;
+        overflow: hidden;
 
-		@media #{$small} {
-		.featured-image {
-				display:block;
-	        	margin:-25px -15px;
-	        	padding: 0px 0px 20px 0px;
-	        }
-	    }
+        @media #{$small} {
+            .featured-image {
+                display: block;
+                margin: -25px -15px;
+                padding: 0px 0px 20px 0px;
+            }
+        }
 
-		@media #{$medium} {
-			padding: 30px;
+        @media #{$medium} {
+            padding: 30px;
 
-			.featured-image {
-				display:block;
-	        	margin:-30px -30px;
-	        	padding: 0px 0px 30px 0px;
-	        }
-		}
+            .featured-image {
+                display: block;
+                margin: -30px -30px;
+                padding: 0px 0px 30px 0px;
+            }
+        }
 
-		@media #{$large} {
-			margin-bottom: 30px;
-			padding: 50px 80px;
+        @media #{$large} {
+            margin-bottom: 30px;
+            padding: 50px 80px;
 
-			.featured-image {
-				display:block;
-	        	margin:-50px -80px;
-	        	padding: 0px 0px 50px 0px;
-	        }
-		}
-       
-        a { 
+            .featured-image {
+                display: block;
+                margin: -50px -80px;
+                padding: 0px 0px 50px 0px;
+            }
+        }
+
+        a {
             img:hover {
                 opacity: 0.9;
             }
         }
 
-        
-	}
+
+    }
+}
+
+// Featured-image
+.featured-image {
+    img {
+        height: 300px;
+    }
 }
 
 /*--- FOOTER ----------------------------------------------------------------*/
 
 .footer-wrapper {
-	margin: 2em auto;
-	text-align: center;
-	color: lighten($text-color,20);
+    margin: 2em auto;
+    text-align: center;
+    color: lighten($text-color, 20);
     font-size: 14px;
 
-    a:link{
-        color: lighten($text-color,60);
+    a:link {
+        color: lighten($text-color, 60);
     }
-    
-	a:hover {
-		color: lighten($text-color,80);
-	}
+
+    a:hover {
+        color: lighten($text-color, 80);
+    }
 }
 
 /*--- BROWSER UPGRADE -------------------------------------------------------*/
 
 .upgrade {
-	padding: 10px;
-	text-align: center;
+    padding: 10px;
+    text-align: center;
 }
 
 /*--- BODY ------------------------------------------------------------------*/
 
 body {
     font-family: $base-font;
-    color: $text-color;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	background-color: $body-color;
+    // color: $text-color;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: $body-color;
     margin-top: 0px + $doc-line-height;
     font-size: 0px + $doc-font-size;
 }
 
 /*--- HEADINGS --------------------------------------------------------------*/
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: $heading-font;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font;
 }
 
 h1 {
-	@media #{$medium} {
+    @media #{$medium} {
         font-size: 32px;
-	}
+    }
 }

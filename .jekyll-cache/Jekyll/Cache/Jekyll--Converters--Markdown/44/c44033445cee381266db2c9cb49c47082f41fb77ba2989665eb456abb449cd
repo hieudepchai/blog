@@ -1,12 +1,15 @@
-I"�<p>This homework gives explaination about the Activity LifeCyle.</p>
+I"�<p>This homework gives explaination about the Activity LifeCyle.</p>
+
+<h2 id="content">Content</h2>
+<embed src="/files/2019-09-28/Lab 2 - Activity class.pdf.pdf" width="800" height="500" type="application/pdf" />
 
 <h2 id="materials">Materials</h2>
 
-<p><a href="https://developer.android.com/guide/components/activities/activity-lifecycle">Understand the Activity Lifecycle</a><br />
-<a href="https://stackoverflow.com/questions/16769654/how-to-use-onsaveinstancestate-and-onrestoreinstancestate">How to use onSaveInstanceState() and onRestoreInstanceState()?</a><br />
-https://viblo.asia/p/huong-dan-debug-co-ban-trong-android-studio-07LKXYopZV4
-https://stackoverflow.com/questions/36841033/onsaveinstancestate-and-finish
-https://techblog.vn/android-lifecycle</p>
+<p><a href="https://developer.android.com/guide/components/activities/activity-lifecycle">Google: Understand the Activity Lifecycle</a><br />
+<a href="https://techblog.vn/android-lifecycle">Tech Blog: Android LifeCycle</a><br />
+<a href="https://stackoverflow.com/questions/16769654/how-to-use-onsaveinstancestate-and-onrestoreinstancestate">StackOverflow: How to use onSaveInstanceState() and onRestoreInstanceState()?</a><br />
+<a href="https://viblo.asia/p/huong-dan-debug-co-ban-trong-android-studio-07LKXYopZV4">Hướng dẫn debug cơ bản trong Android Studio</a><br />
+<a href="https://stackoverflow.com/questions/36841033/onsaveinstancestate-and-finish">StackOverflow: onSaveInstanceState and finish()</a></p>
 
 <ul>
   <li>Sartorial hoodie</li>
@@ -17,7 +20,7 @@ https://techblog.vn/android-lifecycle</p>
 
 <p>Incididunt umami sriracha, ethical fugiat VHS ex assumenda yr irure direct trade. Marfa Truffaut bicycle rights, kitsch placeat Etsy kogi asymmetrical. Beard locavore flexitarian, kitsch photo booth hoodie plaid ethical readymade leggings yr.</p>
 
-<p>Aesthetic odio dolore, meggings disrupt qui readymade stumptown brunch Terry Richardson pour-over gluten-free. Banksy american apparel in selfies, biodiesel flexitarian organic meh wolf quinoa gentrify banjo kogi. Readymade tofu ex, scenester dolor umami fingerstache occaecat fashion axe Carles jean shorts minim. Keffiyeh fashion axe nisi Godard mlkshk dolore. Lomo you probably haven’t heard of them eu non, Odd Future Truffaut pug keytar meggings McSweeney’s Pinterest cred. Etsy literally aute esse, eu bicycle rights qui meggings fanny pack. Gentrify leggings pug flannel duis.</p>
+<p>Aesthetic odio dolore, meggings disrupt qui readymade stumptown brunch Terry Richardson pour-over gluten-free. Banksy american apparel in selfies, biodiesel flexitarian organic meh wolf quinoa gentrify banjo kogi. Readymade tofu ex, scenester dolor umami fingerstache occaecat fashion axe Carles jean shorts minim. Keffiyeh fashion axe nisi Godard mlkshk dolore. Lomo you probably haven’t heard of them eu non, Odd Future Truffaut pug keytar meggings McSweeney’s Pinterest cred. Etsy literally aute esse, eu bicycle rights qui meggings fanny pack. Gentr qify leggings pug flannel duis.</p>
 
 <h2 id="forage-occaecat-cardigan-qui">Forage occaecat cardigan qui</h2>
 

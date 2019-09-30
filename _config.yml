@@ -3,7 +3,8 @@ description:      Your site description...
 copyright:        Nguyen Minh Hieu
 url: # add your custom site url (format: https://example.com)
 
-plugins: [jekyll-paginate]
+plugins: 
+  [jekyll-paginate]
 future:      false  # publish future dated posts --  true, false (default)
 highlighter: rouge
 markdown:    kramdown

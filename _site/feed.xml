@@ -3,10 +3,10 @@
   <channel>
     <title>e i h n i m</title>
     <description>e i h n i m</description>
-    <link>http://localhost:1205/</link>
+    <link>/</link>
     <atom:link href="nathanrooy.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 02 Oct 2019 15:37:44 +0700</pubDate>
-    <lastBuildDate>Wed, 02 Oct 2019 15:37:44 +0700</lastBuildDate>
+    <pubDate>Wed, 02 Oct 2019 16:20:27 +0700</pubDate>
+    <lastBuildDate>Wed, 02 Oct 2019 16:20:27 +0700</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
       
     

@@ -2,7 +2,7 @@ title:            e i h n i m
 description:      e i h n i m
 copyright:        Nguyen Minh Hieu
 url: # add your custom site url (format: https://example.com)
-header: images/header/1.jpg
+header: images/header/clean-and-simple-header.jpg
 plugins: 
   [jekyll-paginate]
 future:      false  # publish future dated posts --  true, false (default)

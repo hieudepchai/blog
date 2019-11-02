@@ -6,9 +6,9 @@
 
 <head>
     <meta charset="utf-8">
-<title>MMDS: Materials &#8211; e i h n i m</title>
+<title>Zing Mp3 MusicCrawler - Last Modified Nov 1 2019 &#8211; e i h n i m</title>
 <meta name="description" content="e i h n i m">
-<meta name="keywords" content="daily brief, MMDS">
+<meta name="keywords" content="python, cralwer, selenium, multithread">
 
 <!-- MathJax -->
 <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
@@ -20,16 +20,16 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MMDS: Materials">
+<meta property="og:title" content="Zing Mp3 MusicCrawler - Last Modified Nov 1 2019">
 <meta property="og:description" content="e i h n i m">
-<meta property="og:url" content="http://localhost:4000/posts/2019-09-30/mmds-materials.html">
+<meta property="og:url" content="http://localhost:4000/posts/2019-11-01/crawler.html">
 <meta property="og:site_name" content="e i h n i m">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/posts/2019-09-30/mmds-materials.html">
+<link rel="canonical" href="http://localhost:4000/posts/2019-11-01/crawler.html">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="e i h n i m Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -83,26 +83,39 @@
         <article class="hentry">
 
             <div class="featured-image">
-            <img src="/images/mmds/mmds_pic.png" style="width:100%">
+            <img src="/images/2019-11-1/selenium-with-python.png" style="width:100%">
             </div>
 
             <!-- MAIN -->
             <h1 class="entry-title">
-                <a>MMDS: Materials</a>
+                <a>Zing Mp3 MusicCrawler - Last Modified Nov 1 2019</a>
             </h1>
             <h3 class="entry-subtitle">
-                <a href="http://localhost:4000" rel="bookmark" title="" itemprop="url"></a>
+                <a href="http://localhost:4000" rel="bookmark" title="" itemprop="url">In this project, I used Selenium (python) + Multithreadprocessing to build a crawler on Zing Mp3 Top 100 pages,then export data to json/csv files.</a>
             </h3>
 
             <hr>
 
             <!-- POST CONTENT -->
             <div class="entry-content">
-                <p><a href="http://www.mmds.org/?fbclid=IwAR2K5O0oXRCNq17DTq54lrwGOznFmd6tQcAVmhi4aXEBTQw7AtrItiHc6_Q#courses" target="_blank">Book’s Homepage</a><br />
-<a href="https://www.mmds.org/projects.html?fbclid=IwAR137SPyo5oUeRhzg08B-rjfNmBdeVECTgmFJIsnypbTljvD3U3q0fzFOqQ" target="_blank">SNAP Project Site</a><br />
-<a href="https://www.mmds.org/data/index.html" target="_blank">SNAP Dataset</a><br />
-<a href="http://web.stanford.edu/class/cs341/projects.html?fbclid=IwAR1Dsh5RxH7sOqfre7GYrjHaIoDpVx6MNDXPL6ZqBDK70HUTJ6V28OY8Ryk" target="_blank">CS341: Projects in Mining Massive Data Sets</a><br />
-<a href="https://cs.stanford.edu/people/jure/teaching.html?fbclid=IwAR0NHMxLZyUb_4XE5zH_6zLE1hhvbcjyNRY3JteC7WWino-suuvw892k1OE" target="_blank">Jure Jeskovec’s Tutorials In Large Social And Information Networks</a><br /></p>
+                <h1 id="source-code">Source code</h1>
+<p><a href="https://github.com/hieudepchai/hieudepchai.github.io" target="_blank">Music Cralwer</a></p>
+<h1 id="details">Details</h1>
+<ol>
+  <li>
+    <p>Before start crawling, you need to install packages (python3, pip, selenium and multithreadprocessing) and Chronium (Ubuntu).</p>
+  </li>
+  <li>
+    <p>Explaination on files:</p>
+  </li>
+</ol>
+<ul>
+  <li>multithread_crawler.py: crawler file. To start crawling, run this. Note that you need to <b>adjust chromepath</b> depending on Ubuntu/Windows and add urls to <b>list_top100_urls</b>. The output file ( songs.json) is in
+  folder <b>result</b>.</li>
+  <li>chromedriver.exe: Chrome driver file used for Windows.</li>
+  <li>generate_metadata.py: export lists of genres and singers to json/csv files in folder <b>result</b>.</li>
+  <li>other files: samples I collected as materials. Don't mind about them.</li>
+</ul>
 
             </div>
 
@@ -113,9 +126,13 @@
             <div class="inline-tags">
                 <span>
                     
-                        <a href="/tags/#daily brief">#daily brief&nbsp;&nbsp;&nbsp;</a>
+                        <a href="/tags/#python">#python&nbsp;&nbsp;&nbsp;</a>
                     
-                        <a href="/tags/#MMDS">#MMDS&nbsp;&nbsp;&nbsp;</a>
+                        <a href="/tags/#cralwer">#cralwer&nbsp;&nbsp;&nbsp;</a>
+                    
+                        <a href="/tags/#selenium">#selenium&nbsp;&nbsp;&nbsp;</a>
+                    
+                        <a href="/tags/#multithread">#multithread&nbsp;&nbsp;&nbsp;</a>
                     
                 </span>
             </div>
@@ -124,7 +141,7 @@
 
             <!-- POST DATE -->
             <div class="post-date">
-                SEPTEMBER 30, 2019
+                NOVEMBER 1, 2019
             </div>
         </article>
     </div>

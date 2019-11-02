@@ -3,12 +3,46 @@
   <channel>
     <title>e i h n i m</title>
     <description>e i h n i m</description>
-    <link>http://localhost:1205/</link>
+    <link>http://localhost:4000/</link>
     <atom:link href="nathanrooy.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 02 Nov 2019 01:30:41 +0700</pubDate>
-    <lastBuildDate>Sat, 02 Nov 2019 01:30:41 +0700</lastBuildDate>
+    <pubDate>Sat, 02 Nov 2019 21:31:13 +0700</pubDate>
+    <lastBuildDate>Sat, 02 Nov 2019 21:31:13 +0700</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
       
+    
+    <item>
+        <title>Build an REST API  with Django + Heroku + PostgreSQL (Materials Only)</title>
+        <description>&lt;h1 id=&quot;problems-and-materials&quot;&gt;Problems and Materials&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://gist.github.com/prodeveloper/68e3545dc645f3107b2415211ab36a20&quot; target=&quot;_blank&quot;&gt;Full tutorial on GitHub of prodeveloper&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://viblo.asia/p/xay-dung-nhanh-api-voi-django-rest-framework-va-heroku-bJzKmyq6K9N&quot; target=&quot;_blank&quot;&gt;Full Vietnamese tutorial&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://stackoverflow.com/questions/20410873/how-can-i-browse-my-heroku-database&quot; target=&quot;_blank&quot;&gt;Stackoverflow: How can I browse my Heroku database?&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://stackoverflow.com/questions/11769860/connect-to-a-heroku-database-with-pgadmin&quot; target=&quot;_blank&quot;&gt;Stackoverflow: Connect to a heroku databasae with pgAdmin&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://devcenter.heroku.com/articles/custom-domains&quot; target=&quot;_blank&quot;&gt;Heroku: Custom domains&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://devcenter.heroku.com/articles/heroku-postgresql&quot; target=&quot;_blank&quot;&gt;Heroku: Postgres&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://o7planning.org/vi/11353/huong-dan-cai-dat-pgadmin-tren-ubuntu&quot; target=&quot;_blank&quot;&gt;Vietnamese tutorial: install pgAdmin3 and 4&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 02 Nov 2019 00:00:00 +0700</pubDate>
+        
+        <link>/posts/2019-11-02/musicplayerapi.html</link>
+          
+        
+            <category>python</category>
+        
+            <category>postgresql</category>
+        
+            <category>django</category>
+        
+            <category>rest</category>
+        
+            <category>heroku</category>
+        
+          
+        
+            <category>posts</category>
+        
+          
+      </item>
     
     <item>
         <title>Zing Mp3 MusicCrawler - Last Modified Nov 1 2019</title>
@@ -17,7 +51,7 @@
 &lt;h1 id=&quot;details&quot;&gt;Details&lt;/h1&gt;
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;Before start crawling, you need to install packages (python3, pip, selenium and multithreadprocessing) and Chronium (Ubuntu)&lt;/p&gt;
+    &lt;p&gt;Before start crawling, you need to install packages (python3, pip, selenium and multithreadprocessing) and Chronium (Ubuntu).&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Explaination on files:&lt;/p&gt;
@@ -26,14 +60,14 @@
 &lt;ul&gt;
   &lt;li&gt;multithread_crawler.py: crawler file. To start crawling, run this. Note that you need to &lt;b&gt;adjust chromepath&lt;/b&gt; depending on Ubuntu/Windows and add urls to &lt;b&gt;list_top100_urls&lt;/b&gt;. The output file ( songs.json) is in
   folder &lt;b&gt;result&lt;/b&gt;.&lt;/li&gt;
-  &lt;li&gt;chromedriver.exe: Chrome driver file used for Windows&lt;/li&gt;
-  &lt;li&gt;generate_metadata.py: export lists of genres and singers to json/csv files in folder &lt;b&gt;result&lt;/b&gt; &lt;/li&gt;
+  &lt;li&gt;chromedriver.exe: Chrome driver file used for Windows.&lt;/li&gt;
+  &lt;li&gt;generate_metadata.py: export lists of genres and singers to json/csv files in folder &lt;b&gt;result&lt;/b&gt;.&lt;/li&gt;
   &lt;li&gt;other files: samples I collected as materials. Don't mind about them.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 01 Nov 2019 00:00:00 +0700</pubDate>
         
-        <link>/posts/2019-11-01/sample-post.html</link>
+        <link>/posts/2019-11-01/crawler.html</link>
           
         
             <category>python</category>

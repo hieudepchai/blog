@@ -22,15 +22,15 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="e i h n i m">
 <meta property="og:description" content="e i h n i m">
-<meta property="og:url" content="http://localhost:1205/">
+<meta property="og:url" content="http://localhost:4000/">
 <meta property="og:site_name" content="e i h n i m">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:1205/">
-<link href="http://localhost:1205/feed.xml" type="application/atom+xml" rel="alternate" title="e i h n i m Feed">
+<link rel="canonical" href="http://localhost:4000/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="e i h n i m Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -38,7 +38,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="http://localhost:1205/assets/css/main.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
 <!-- Webfonts -->
 <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
 
@@ -86,7 +86,70 @@
 
     <!-- POST FEATURED IMAGE -->
     <div class="featured-image">
-        <a href="/posts/2019-11-01/sample-post.html">
+        <a href="/posts/2019-11-02/musicplayerapi.html">
+                <img src="/images/2019-11-02/musicplayerapi.png" style="width:100%">
+        </a>      
+    </div>
+
+    <!-- POST TITLE -->
+    <header>
+        <h1 class="entry-title">
+            <a href="http://localhost:4000/posts/2019-11-02/musicplayerapi.html" rel="bookmark" title="Build an REST API  with Django + Heroku + PostgreSQL (Materials Only)"
+                itemprop="url">Build an REST API  with Django + Heroku + PostgreSQL (Materials Only)</a>
+        </h1>
+        <!-- POST TAGS -->
+        <div class="inline-tags">
+            <span>
+                
+                <a href="/tags/#python">#python&nbsp;&nbsp;&nbsp;</a>
+                
+                <a href="/tags/#postgresql">#postgresql&nbsp;&nbsp;&nbsp;</a>
+                
+                <a href="/tags/#django">#django&nbsp;&nbsp;&nbsp;</a>
+                
+                <a href="/tags/#rest">#rest&nbsp;&nbsp;&nbsp;</a>
+                
+                <a href="/tags/#heroku">#heroku&nbsp;&nbsp;&nbsp;</a>
+                
+            </span>
+        </div>
+        <h3 class="entry-subtitle">
+           These are materials and problems I met when building a REST API serving for university course's android project.
+        </h3>
+    </header>
+    <!-- POST CONTENT -->
+    <!-- <div class="entry-content">
+        <h1 id="problems-and-materials">Problems and Materials</h1>
+<p><a href="https://gist.github.com/prodeveloper/68e3545dc645f3107b2415211ab36a20" target="_blank">Full tutorial on GitHub of prodeveloper</a><br />
+<a href="https://viblo.asia/p/xay-dung-nhanh-api-voi-django-rest-framework-va-heroku-bJzKmyq6K9N" target="_blank">Full Vietnamese tutorial</a><br />
+<a href="https://stackoverflow.com/questions/20410873/how-can-i-browse-my-heroku-database" target="_blank">Stackoverflow: How can I browse my Heroku database?</a><br />
+<a href="https://stackoverflow.com/questions/11769860/connect-to-a-heroku-database-with-pgadmin" target="_blank">Stackoverflow: Connect to a heroku databasae with pgAdmin</a><br />
+<a href="https://devcenter.heroku.com/articles/custom-domains" target="_blank">Heroku: Custom domains</a><br />
+<a href="https://devcenter.heroku.com/articles/heroku-postgresql" target="_blank">Heroku: Postgres</a><br />
+<a href="https://o7planning.org/vi/11353/huong-dan-cai-dat-pgadmin-tren-ubuntu" target="_blank">Vietnamese tutorial: install pgAdmin3 and 4</a><br /></p>
+
+
+    </div> -->
+
+    <!--- DIVIDING LINE -->
+    <hr>
+
+    <!-- POST DATE -->
+    <div class="post-date">
+        <span class="entry-date date published updated">
+            <time datetime="2019-11-02T00:00:00+07:00">
+                <a href="http://localhost:4000/posts/2019-11-02/musicplayerapi.html">November 02, 2019</a>
+            </time>
+        </span>
+    </div>
+
+</article>
+
+<article>
+
+    <!-- POST FEATURED IMAGE -->
+    <div class="featured-image">
+        <a href="/posts/2019-11-01/crawler.html">
                 <img src="/images/2019-11-1/selenium-with-python.png" style="width:100%">
         </a>      
     </div>
@@ -94,7 +157,7 @@
     <!-- POST TITLE -->
     <header>
         <h1 class="entry-title">
-            <a href="http://localhost:1205/posts/2019-11-01/sample-post.html" rel="bookmark" title="Zing Mp3 MusicCrawler - Last Modified Nov 1 2019"
+            <a href="http://localhost:4000/posts/2019-11-01/crawler.html" rel="bookmark" title="Zing Mp3 MusicCrawler - Last Modified Nov 1 2019"
                 itemprop="url">Zing Mp3 MusicCrawler - Last Modified Nov 1 2019</a>
         </h1>
         <!-- POST TAGS -->
@@ -122,7 +185,7 @@
 <h1 id="details">Details</h1>
 <ol>
   <li>
-    <p>Before start crawling, you need to install packages (python3, pip, selenium and multithreadprocessing) and Chronium (Ubuntu)</p>
+    <p>Before start crawling, you need to install packages (python3, pip, selenium and multithreadprocessing) and Chronium (Ubuntu).</p>
   </li>
   <li>
     <p>Explaination on files:</p>
@@ -131,8 +194,8 @@
 <ul>
   <li>multithread_crawler.py: crawler file. To start crawling, run this. Note that you need to <b>adjust chromepath</b> depending on Ubuntu/Windows and add urls to <b>list_top100_urls</b>. The output file ( songs.json) is in
   folder <b>result</b>.</li>
-  <li>chromedriver.exe: Chrome driver file used for Windows</li>
-  <li>generate_metadata.py: export lists of genres and singers to json/csv files in folder <b>result</b> </li>
+  <li>chromedriver.exe: Chrome driver file used for Windows.</li>
+  <li>generate_metadata.py: export lists of genres and singers to json/csv files in folder <b>result</b>.</li>
   <li>other files: samples I collected as materials. Don't mind about them.</li>
 </ul>
 
@@ -145,7 +208,7 @@
     <div class="post-date">
         <span class="entry-date date published updated">
             <time datetime="2019-11-01T00:00:00+07:00">
-                <a href="http://localhost:1205/posts/2019-11-01/sample-post.html">November 01, 2019</a>
+                <a href="http://localhost:4000/posts/2019-11-01/crawler.html">November 01, 2019</a>
             </time>
         </span>
     </div>
@@ -164,7 +227,7 @@
     <!-- POST TITLE -->
     <header>
         <h1 class="entry-title">
-            <a href="http://localhost:1205/posts/2019-09-30/mmds-materials.html" rel="bookmark" title="MMDS: Materials"
+            <a href="http://localhost:4000/posts/2019-09-30/mmds-materials.html" rel="bookmark" title="MMDS: Materials"
                 itemprop="url">MMDS: Materials</a>
         </h1>
         <!-- POST TAGS -->
@@ -198,7 +261,7 @@
     <div class="post-date">
         <span class="entry-date date published updated">
             <time datetime="2019-09-30T00:00:00+07:00">
-                <a href="http://localhost:1205/posts/2019-09-30/mmds-materials.html">September 30, 2019</a>
+                <a href="http://localhost:4000/posts/2019-09-30/mmds-materials.html">September 30, 2019</a>
             </time>
         </span>
     </div>
@@ -217,7 +280,7 @@
     <!-- POST TITLE -->
     <header>
         <h1 class="entry-title">
-            <a href="http://localhost:1205/posts/2019-09-30/bigdata.html" rel="bookmark" title="[MSIS405.K11.CTTT] Big Data: GraphX and Neo4j Practice"
+            <a href="http://localhost:4000/posts/2019-09-30/bigdata.html" rel="bookmark" title="[MSIS405.K11.CTTT] Big Data: GraphX and Neo4j Practice"
                 itemprop="url">[MSIS405.K11.CTTT] Big Data: GraphX and Neo4j Practice</a>
         </h1>
         <!-- POST TAGS -->
@@ -371,7 +434,7 @@ Result:
     <div class="post-date">
         <span class="entry-date date published updated">
             <time datetime="2019-09-30T00:00:00+07:00">
-                <a href="http://localhost:1205/posts/2019-09-30/bigdata.html">September 30, 2019</a>
+                <a href="http://localhost:4000/posts/2019-09-30/bigdata.html">September 30, 2019</a>
             </time>
         </span>
     </div>
@@ -390,7 +453,7 @@ Result:
     <!-- POST TITLE -->
     <header>
         <h1 class="entry-title">
-            <a href="http://localhost:1205/posts/2019-09-28/breif.html" rel="bookmark" title="Daily Brief 101: MOBILE DEV APP LAB 01 - PROBLEMS"
+            <a href="http://localhost:4000/posts/2019-09-28/breif.html" rel="bookmark" title="Daily Brief 101: MOBILE DEV APP LAB 01 - PROBLEMS"
                 itemprop="url">Daily Brief 101: MOBILE DEV APP LAB 01 - PROBLEMS</a>
         </h1>
         <!-- POST TAGS -->
@@ -432,7 +495,7 @@ Result:
     <div class="post-date">
         <span class="entry-date date published updated">
             <time datetime="2019-09-28T00:00:00+07:00">
-                <a href="http://localhost:1205/posts/2019-09-28/breif.html">September 28, 2019</a>
+                <a href="http://localhost:4000/posts/2019-09-28/breif.html">September 28, 2019</a>
             </time>
         </span>
     </div>
@@ -451,7 +514,7 @@ Result:
     <!-- POST TITLE -->
     <header>
         <h1 class="entry-title">
-            <a href="http://localhost:1205/posts/2016-11-20/sample-post.html" rel="bookmark" title="Sample Post"
+            <a href="http://localhost:4000/posts/2016-11-20/sample-post.html" rel="bookmark" title="Sample Post"
                 itemprop="url">Sample Post</a>
         </h1>
         <!-- POST TAGS -->
@@ -605,7 +668,7 @@ Result:
     <div class="post-date">
         <span class="entry-date date published updated">
             <time datetime="2016-11-20T00:00:00+07:00">
-                <a href="http://localhost:1205/posts/2016-11-20/sample-post.html">November 20, 2016</a>
+                <a href="http://localhost:4000/posts/2016-11-20/sample-post.html">November 20, 2016</a>
             </time>
         </span>
     </div>
@@ -624,7 +687,7 @@ Result:
     <!-- POST TITLE -->
     <header>
         <h1 class="entry-title">
-            <a href="http://localhost:1205/posts/2016-11-19/image-post.html" rel="bookmark" title="Image Post"
+            <a href="http://localhost:4000/posts/2016-11-19/image-post.html" rel="bookmark" title="Image Post"
                 itemprop="url">Image Post</a>
         </h1>
         <!-- POST TAGS -->
@@ -692,7 +755,7 @@ Result:
     <div class="post-date">
         <span class="entry-date date published updated">
             <time datetime="2016-11-19T00:00:00+07:00">
-                <a href="http://localhost:1205/posts/2016-11-19/image-post.html">November 19, 2016</a>
+                <a href="http://localhost:4000/posts/2016-11-19/image-post.html">November 19, 2016</a>
             </time>
         </span>
     </div>
@@ -711,7 +774,7 @@ Result:
     <!-- POST TITLE -->
     <header>
         <h1 class="entry-title">
-            <a href="http://localhost:1205/posts/2016-11-18/code-highlighting-post.html" rel="bookmark" title="Syntax Highlighting Post"
+            <a href="http://localhost:4000/posts/2016-11-18/code-highlighting-post.html" rel="bookmark" title="Syntax Highlighting Post"
                 itemprop="url">Syntax Highlighting Post</a>
         </h1>
         <!-- POST TAGS -->
@@ -840,7 +903,7 @@ Result:
     <div class="post-date">
         <span class="entry-date date published updated">
             <time datetime="2016-11-18T00:00:00+07:00">
-                <a href="http://localhost:1205/posts/2016-11-18/code-highlighting-post.html">November 18, 2016</a>
+                <a href="http://localhost:4000/posts/2016-11-18/code-highlighting-post.html">November 18, 2016</a>
             </time>
         </span>
     </div>
@@ -859,7 +922,7 @@ Result:
     <!-- POST TITLE -->
     <header>
         <h1 class="entry-title">
-            <a href="http://localhost:1205/posts/2016-11-14/video-post.html" rel="bookmark" title="A Video Post"
+            <a href="http://localhost:4000/posts/2016-11-14/video-post.html" rel="bookmark" title="A Video Post"
                 itemprop="url">A Video Post</a>
         </h1>
         <!-- POST TAGS -->
@@ -896,7 +959,7 @@ Result:
     <div class="post-date">
         <span class="entry-date date published updated">
             <time datetime="2016-11-14T00:00:00+07:00">
-                <a href="http://localhost:1205/posts/2016-11-14/video-post.html">November 14, 2016</a>
+                <a href="http://localhost:4000/posts/2016-11-14/video-post.html">November 14, 2016</a>
             </time>
         </span>
     </div>
@@ -915,7 +978,7 @@ Result:
     <!-- POST TITLE -->
     <header>
         <h1 class="entry-title">
-            <a href="http://localhost:1205/posts/2016-11-10/readability-post.html" rel="bookmark" title="Testing Readability with a Bunch of Text"
+            <a href="http://localhost:4000/posts/2016-11-10/readability-post.html" rel="bookmark" title="Testing Readability with a Bunch of Text"
                 itemprop="url">Testing Readability with a Bunch of Text</a>
         </h1>
         <!-- POST TAGS -->
@@ -988,7 +1051,7 @@ Result:
     <div class="post-date">
         <span class="entry-date date published updated">
             <time datetime="2016-11-10T00:00:00+07:00">
-                <a href="http://localhost:1205/posts/2016-11-10/readability-post.html">November 10, 2016</a>
+                <a href="http://localhost:4000/posts/2016-11-10/readability-post.html">November 10, 2016</a>
             </time>
         </span>
     </div>
@@ -1002,7 +1065,7 @@ Result:
     
 
         
-            <a href="http://localhost:1205/page2/">OLDER→</a>
+            <a href="http://localhost:4000/page2/">OLDER→</a>
         
     
         

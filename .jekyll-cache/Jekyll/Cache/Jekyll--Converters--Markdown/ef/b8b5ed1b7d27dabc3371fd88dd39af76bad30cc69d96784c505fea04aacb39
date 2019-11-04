@@ -1,0 +1,11 @@
+I"<h1 id="problems-and-materials">Problems and Materials</h1>
+<p><a href="https://stackoverflow.com/questions/49482453/generics-vs-viewset-in-django-rest-framework-how-to-prefer-which-one-to-use" target="_blank">generics vs viewset in django rest framework, how to prefer which one to use?</a><br />
+<a href="https://www.django-rest-framework.org/api-guide/viewsets/#viewsets" target="_blank">Viewsets, ModelViewSet</a><br />
+<a href="https://www.django-rest-framework.org/tutorial/6-viewsets-and-routers/#refactoring-to-use-viewsets" target="_blank">Tutorial 6: ViewSets &amp; Routers</a><br />
+<a href="https://www.django-rest-framework.org/tutorial/3-class-based-views/" target="_blank">Tutorial 3: Class-based Views</a><br />
+<a href="https://www.django-rest-framework.org/tutorial/2-requests-and-responses/" target="_blank">Tutorial 2: Requests and Responses</a><br />
+<a href="https://www.dabapps.com/blog/api-performance-profiling-django-rest-framework/" target="_blank">Web API performance: profiling Django REST framework</a><br />
+<a href="https://stackoverflow.com/questions/17256724/include-intermediary-through-model-in-responses-in-django-rest-framework" target="_blank">Include intermediary (through model) in responses in Django Rest Framework</a><br />
+<a href="https://www.django-rest-framework.org/api-guide/relations/#reverse-relations" target="_blank">Serializer relations</a><br /></p>
+
+:ET

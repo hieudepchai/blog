@@ -1,4 +1,4 @@
-I"ý9<h2 id="tutorial">Tutorial</h2>
+I";D<h2 id="tutorial">Tutorial</h2>
 <p><a href="https://medium.com/data-science-school/practical-apache-spark-in-10-minutes-part-7-graphx-and-neo4j-b6b01cffa4fd" target="_blank">Practical Apache Spark in 10 minutes. Part 7 â€” GraphX and Neo4j</a></p>
 <h2 id="practice">Practice</h2>
 <ul>
@@ -113,7 +113,33 @@ Result:
    . <strong>merge(subgraph, primary_label=None, primary_key=None)</strong>: Create or update the nodes and relationships of a local subgraph in the remote database.</li>
         </ul>
       </li>
+      <li><strong>Data analysis with Spark</strong>: <br />
+ In terminal:
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   ./bin/spark-shell --conf spark.neo4j.bolt.password=password --packages neo4j-contrib:neo4j-spark-connector:2.2.1-M5
+</code></pre></div>        </div>
+      </li>
     </ol>
+
+    <div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">import</span> <span class="nn">org.neo4j.spark._</span>
+  <span class="k">import</span> <span class="nn">org.apache.spark.graphx._</span>
+  <span class="k">import</span> <span class="nn">org.apache.spark.graphx.lib._</span>
+
+  <span class="k">val</span> <span class="nv">neo</span> <span class="k">=</span> <span class="nc">Neo4j</span><span class="o">(</span><span class="n">sc</span><span class="o">)</span>
+
+  <span class="k">val</span> <span class="nv">graphQuery</span> <span class="k">=</span> <span class="s">"""MATCH (n)-[r]-&gt;(m)
+  RETURN id(n) as source,
+  id(m) as target,
+  type(r) as value
+  SKIP {_skip} LIMIT {_limit}"""</span>
+
+  <span class="k">val</span> <span class="nv">graph</span><span class="k">:</span> <span class="kt">Graph</span><span class="o">[</span><span class="kt">Long</span>, <span class="kt">String</span><span class="o">]</span> <span class="k">=</span><span class="nv">neo</span><span class="o">.</span><span class="py">rels</span><span class="o">(</span><span class="n">graphQuery</span><span class="o">).</span><span class="py">partitions</span><span class="o">(</span><span class="mi">10</span><span class="o">).</span><span class="py">batch</span><span class="o">(</span><span class="mi">200</span><span class="o">).</span><span class="py">loadGraph</span>
+
+  <span class="nv">graph</span><span class="o">.</span><span class="py">vertices</span><span class="o">.</span><span class="py">count</span>
+  <span class="nv">graph</span><span class="o">.</span><span class="py">edges</span><span class="o">.</span><span class="py">count</span>
+
+  <span class="k">val</span> <span class="nv">g</span> <span class="k">=</span> <span class="nv">PageRank</span><span class="o">.</span><span class="py">run</span><span class="o">(</span><span class="n">graph</span><span class="o">,</span> <span class="mi">5</span><span class="o">)</span>
+  <span class="nv">Neo4jGraph</span><span class="o">.</span><span class="py">saveGraph</span><span class="o">(</span><span class="n">sc</span><span class="o">,</span> <span class="n">g</span><span class="o">,</span> <span class="s">"rank"</span><span class="o">)</span>
+</code></pre></div>    </div>
   </li>
 </ul>
 

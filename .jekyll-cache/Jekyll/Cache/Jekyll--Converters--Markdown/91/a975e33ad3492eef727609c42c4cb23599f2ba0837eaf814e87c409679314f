@@ -1,104 +1,4 @@
-<!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
-
-<head>
-    <meta charset="utf-8">
-<title>[MSIS405.K11.CTTT] Big Data: GraphX and Neo4j Practice &#8211; e i h n i m</title>
-<meta name="description" content="e i h n i m">
-<meta name="keywords" content="daily brief, Big Data, Spark, Graph, pandas">
-
-<!-- MathJax -->
-<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-
-
-
-
-
-<!-- Open Graph -->
-<meta property="og:locale" content="en_US">
-<meta property="og:type" content="article">
-<meta property="og:title" content="[MSIS405.K11.CTTT] Big Data: GraphX and Neo4j Practice">
-<meta property="og:description" content="e i h n i m">
-<meta property="og:url" content="http://localhost:1205/posts/2019-09-30/bigdata.html">
-<meta property="og:site_name" content="e i h n i m">
-
-
-
-
-
-<link rel="canonical" href="http://localhost:1205/posts/2019-09-30/bigdata.html">
-<link href="http://localhost:1205/feed.xml" type="application/atom+xml" rel="alternate" title="e i h n i m Feed">
-
-<!-- http://t.co/dKP3o1e -->
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- For all browsers -->
-<link rel="stylesheet" href="http://localhost:1205/assets/css/main.css">
-<!-- Webfonts -->
-<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
-
-<meta http-equiv="cleartype" content="on">
-
-
-
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
-
-
-    <!-- HEADER IMAGE -->
-
-    <br>
-    <center>
-        <span class="main-header-image">
-            <h1 style="font-weight:100; font-kerning:normal"><a href="/">e i h n i m</a></h1>
-        </span>
-    </center>
-
-    <!-- NAVIGATION -->
-    <br>
-    <center>
-    <nav class="header-nav">
-        <ul class="navigation-bar">
-            <li><a href="/">HOME</a></li>
-            <li><a href="/archives/">ARCHIVE</a></li>
-            <li><a href="/tags/">TAGS</a></li>
-            <li><a href="/about/">ABOUT</a></li>
-            <li><a href="/feed.xml">RSS</a></li>
-        </ul>
-    </nav>
-</center>
-
-</head>
-
-<!-- BODY -->
-<body id="post-index">
-    <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
-
-    <div id="main" role="main">
-        <article class="hentry">
-
-            <div class="featured-image">
-            <img src="/images/graphx.png" style="width:100%">
-            </div>
-
-            <!-- MAIN -->
-            <h1 class="entry-title">
-                <a>[MSIS405.K11.CTTT] Big Data: GraphX and Neo4j Practice</a>
-            </h1>
-            <h3 class="entry-subtitle">
-                <a href="http://localhost:1205" rel="bookmark" title="" itemprop="url">An example based on Igor Bobriakov's tutorial.</a>
-            </h3>
-
-            <hr>
-
-            <!-- POST CONTENT -->
-            <div class="entry-content">
-                <h2 id="tutorial">Tutorial</h2>
+I"&D<h2 id="tutorial">Tutorial</h2>
 <p><a href="https://medium.com/data-science-school/practical-apache-spark-in-10-minutes-part-7-graphx-and-neo4j-b6b01cffa4fd" target="_blank">Practical Apache Spark in 10 minutes. Part 7 — GraphX and Neo4j</a></p>
 <h2 id="practice">Practice</h2>
 <ul>
@@ -213,84 +113,33 @@ Result:
    . <strong>merge(subgraph, primary_label=None, primary_key=None)</strong>: Create or update the nodes and relationships of a local subgraph in the remote database.</li>
         </ul>
       </li>
-      <li><strong>Data analysis with Spark</strong>: <br />
- In terminal:
+      <li><strong>Data analysis with Spark</strong>:
         <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   ./bin/spark-shell --conf spark.neo4j.bolt.password=password --packages neo4j-contrib:neo4j-spark-connector:2.2.1-M5
 </code></pre></div>        </div>
-        <p>Result:
- <img src="/images/2019-09-30/result_spark.png" /></p>
-
-        <div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">import</span> <span class="nn">org.neo4j.spark._</span>
- <span class="k">import</span> <span class="nn">org.apache.spark.graphx._</span>
- <span class="k">import</span> <span class="nn">org.apache.spark.graphx.lib._</span>
-
- <span class="k">val</span> <span class="nv">neo</span> <span class="k">=</span> <span class="nc">Neo4j</span><span class="o">(</span><span class="n">sc</span><span class="o">)</span>
-
- <span class="k">val</span> <span class="nv">graphQuery</span> <span class="k">=</span> <span class="s">"""MATCH (n)-[r]-&gt;(m)
- RETURN id(n) as source,
- id(m) as target,
- type(r) as value
- SKIP {_skip} LIMIT {_limit}"""</span>
-
- <span class="k">val</span> <span class="nv">graph</span><span class="k">:</span> <span class="kt">Graph</span><span class="o">[</span><span class="kt">Long</span>, <span class="kt">String</span><span class="o">]</span> <span class="k">=</span><span class="nv">neo</span><span class="o">.</span><span class="py">rels</span><span class="o">(</span><span class="n">graphQuery</span><span class="o">).</span><span class="py">partitions</span><span class="o">(</span><span class="mi">10</span><span class="o">).</span><span class="py">batch</span><span class="o">(</span><span class="mi">200</span><span class="o">).</span><span class="py">loadGraph</span>
-
- <span class="nv">graph</span><span class="o">.</span><span class="py">vertices</span><span class="o">.</span><span class="py">count</span>
- <span class="nv">graph</span><span class="o">.</span><span class="py">edges</span><span class="o">.</span><span class="py">count</span>
-
- <span class="k">val</span> <span class="nv">g</span> <span class="k">=</span> <span class="nv">PageRank</span><span class="o">.</span><span class="py">run</span><span class="o">(</span><span class="n">graph</span><span class="o">,</span> <span class="mi">5</span><span class="o">)</span>
- <span class="nv">Neo4jGraph</span><span class="o">.</span><span class="py">saveGraph</span><span class="o">(</span><span class="n">sc</span><span class="o">,</span> <span class="n">g</span><span class="o">,</span> <span class="s">"rank"</span><span class="o">)</span>
-</code></pre></div>        </div>
-
-        <p>Result:
- <img src="/images/2019-09-30/result2.png" />
- <img src="/images/2019-09-30/result3.png" /></p>
       </li>
     </ol>
+
+    <div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">import</span> <span class="nn">org.neo4j.spark._</span>
+  <span class="k">import</span> <span class="nn">org.apache.spark.graphx._</span>
+  <span class="k">import</span> <span class="nn">org.apache.spark.graphx.lib._</span>
+
+  <span class="k">val</span> <span class="nv">neo</span> <span class="k">=</span> <span class="nc">Neo4j</span><span class="o">(</span><span class="n">sc</span><span class="o">)</span>
+
+  <span class="k">val</span> <span class="nv">graphQuery</span> <span class="k">=</span> <span class="s">"""MATCH (n)-[r]-&gt;(m)
+  RETURN id(n) as source,
+  id(m) as target,
+  type(r) as value
+  SKIP {_skip} LIMIT {_limit}"""</span>
+
+  <span class="k">val</span> <span class="nv">graph</span><span class="k">:</span> <span class="kt">Graph</span><span class="o">[</span><span class="kt">Long</span>, <span class="kt">String</span><span class="o">]</span> <span class="k">=</span><span class="nv">neo</span><span class="o">.</span><span class="py">rels</span><span class="o">(</span><span class="n">graphQuery</span><span class="o">).</span><span class="py">partitions</span><span class="o">(</span><span class="mi">10</span><span class="o">).</span><span class="py">batch</span><span class="o">(</span><span class="mi">200</span><span class="o">).</span><span class="py">loadGraph</span>
+
+  <span class="nv">graph</span><span class="o">.</span><span class="py">vertices</span><span class="o">.</span><span class="py">count</span>
+  <span class="nv">graph</span><span class="o">.</span><span class="py">edges</span><span class="o">.</span><span class="py">count</span>
+
+  <span class="k">val</span> <span class="nv">g</span> <span class="k">=</span> <span class="nv">PageRank</span><span class="o">.</span><span class="py">run</span><span class="o">(</span><span class="n">graph</span><span class="o">,</span> <span class="mi">5</span><span class="o">)</span>
+  <span class="nv">Neo4jGraph</span><span class="o">.</span><span class="py">saveGraph</span><span class="o">(</span><span class="n">sc</span><span class="o">,</span> <span class="n">g</span><span class="o">,</span> <span class="s">"rank"</span><span class="o">)</span>
+</code></pre></div>    </div>
   </li>
 </ul>
 
-
-            </div>
-
-            <!--- DIVIDING LINE -->
-            <hr>
-
-            <!-- POST TAGS -->
-            <div class="inline-tags">
-                <span>
-                    
-                        <a href="/tags/#daily brief">#daily brief&nbsp;&nbsp;&nbsp;</a>
-                    
-                        <a href="/tags/#Big Data">#Big Data&nbsp;&nbsp;&nbsp;</a>
-                    
-                        <a href="/tags/#Spark">#Spark&nbsp;&nbsp;&nbsp;</a>
-                    
-                        <a href="/tags/#Graph">#Graph&nbsp;&nbsp;&nbsp;</a>
-                    
-                        <a href="/tags/#pandas">#pandas&nbsp;&nbsp;&nbsp;</a>
-                    
-                </span>
-            </div>
-
-            <br>
-
-            <!-- POST DATE -->
-            <div class="post-date">
-                SEPTEMBER 30, 2019
-            </div>
-        </article>
-    </div>
-</body>
-
-<!-- FOOTER -->
-<footer>
-    <div class="footer-wrapper">
-        <footer role="contentinfo">
-            <span>
-    &copy; 2019 Nguyen Minh Hieu.<br>
-</span>
-
-        </footer>
-    </div>
-</footer>
-</html>
+:ET

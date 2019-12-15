@@ -1,0 +1,8 @@
+I"~<div id="DivContent"></div>
+<script> 
+    $(function(){
+      $("#DivContent").load("another_file.html"); 
+    });
+</script>
+
+:ET

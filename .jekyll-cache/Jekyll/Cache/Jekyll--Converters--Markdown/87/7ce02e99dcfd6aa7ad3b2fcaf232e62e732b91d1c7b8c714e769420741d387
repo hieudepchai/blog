@@ -1,0 +1,10 @@
+I"<div id="DivContent"></div>
+<script src="jquery.js"></script>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script&gt; 
+$(function(){
+  $("#DivContent").load("another_file.html"); 
+}); &lt;/script&gt; 
+</code></pre></div></div>
+
+:ET

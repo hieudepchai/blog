@@ -1,12 +1,13 @@
 ---
-
+# layout: post
 categories: posts
-title: Django Rest Notes - Update Nov 4 2019
-subtitle: Notes and problems when build an REST API with Django Rest Framework.
+title: Big Data Assignment Part 2
+subtitle: Big Data Assignment Part 2.
 featured-image: /images/2019-11-04/logo.png
 tags: [python, postgresql, django, rest, heroku]
 date-string: DECEMBER 12, 2019
 ---
+
 <div id="DivContent"></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script> 

@@ -1,8 +1,0 @@
-I"”<div id="DivContent"></div>
-<script> 
-    $(function(){
-      $("#DivContent").load("16520399_16521574_Assignment_Part2.html"); 
-    });
-</script>
-
-:ET

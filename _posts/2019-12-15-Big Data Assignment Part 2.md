@@ -14,7 +14,7 @@ date-string: DECEMBER 12, 2019
         do{
             var password = prompt("Please enter password:");
                 if (password=="hieunguyen_246810"){
-                     $("#DivContent").load("16520399_16521574_Assignment_Part2.html");
+                     $("#DivContent").load("../../../archives/16520399_16521574_Assignment_Part2.html");
                 break;
                     }
         }while(password!="hieunguyen_246810");
